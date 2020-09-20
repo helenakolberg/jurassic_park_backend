@@ -15,12 +15,20 @@ public class Dinosaur {
     @Id
     @GeneratedValue
     private Long id;
-    @NonNull
 
+    @NonNull
     private String name;
+
+    @NonNull
     private String photo;
+
+    @NonNull
     private boolean happiness;
+
+    @NonNull
     private boolean fullness;
+
+    @NonNull
     private boolean health;
 
     @OneToOne(cascade = CascadeType.PERSIST)
