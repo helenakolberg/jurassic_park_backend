@@ -1,15 +1,12 @@
 package com.codeclan.example.JurassicPark.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
+@RequiredArgsConstructor
 @Entity
 
 @Table(name = "user_dinosaur")
@@ -18,7 +15,6 @@ public class Dinosaur {
     @Id
     @GeneratedValue
     private Long id;
-
     @NonNull
 
     private String name;

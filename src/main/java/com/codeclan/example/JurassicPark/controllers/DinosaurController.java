@@ -43,4 +43,5 @@ public class DinosaurController {
         dinosaurRepository.deleteAll();
         return ResponseEntity.ok().build();
     }
+
 }
