@@ -7,9 +7,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
-import java.time.Instant;
-import java.util.Collections;
-import java.util.stream.Stream;
 
 @Component
 public class Initializer implements ApplicationRunner {

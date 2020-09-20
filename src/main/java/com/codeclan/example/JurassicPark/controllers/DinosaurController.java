@@ -25,9 +25,14 @@ public class DinosaurController {
         this.dinosaurRepository = dinosaurRepository;
     }
 
+//    @GetMapping("/dinosaur")
+//    Dinosaur dinosaur(Principal principal) {
+//        return dinosaurRepository.findByUserId(principal.getName());
+//    }
+
     @GetMapping("/dinosaur")
-    Dinosaur dinosaur(Principal principal) {
-        return dinosaurRepository.findByUserId(principal.getName());
+    Collection<Dinosaur> dinosaur() {
+        return dinosaurRepository.findAll();
     }
 
     @PutMapping("/dinosaur")
