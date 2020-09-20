@@ -5,10 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
@@ -29,6 +26,9 @@ public class Dinosaur {
     private boolean happiness;
     private boolean fullness;
     private boolean health;
+
+    @OneToOne(cascade = CascadeType.PERSIST)
+    private User user;
 
 
 }
