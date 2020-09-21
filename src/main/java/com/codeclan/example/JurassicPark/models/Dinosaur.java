@@ -34,5 +34,4 @@ public class Dinosaur {
     @OneToOne(cascade = CascadeType.PERSIST)
     private User user;
 
-
 }
