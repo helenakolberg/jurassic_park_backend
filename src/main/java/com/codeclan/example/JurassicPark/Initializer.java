@@ -18,7 +18,7 @@ public class Initializer implements ApplicationRunner {
 
     public void run(ApplicationArguments args) {
 
-        Dinosaur tRex = new Dinosaur("Tyrannosaurus Rex", "https://www.pinclipart.com/picdir/big/409-4092141_jurassic-world-high-quality-transparent-background-dinosaur-png.png", true, true, true);
+        Dinosaur tRex = new Dinosaur("Tyrannosaurus Rex", "https://i.ibb.co/89mddTZ/dino.png", true, true, true);
         dinosaurRepository.save(tRex);
 
     }
