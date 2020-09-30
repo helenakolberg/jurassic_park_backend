@@ -15,31 +15,37 @@
         Login to Okta and click Applications:
         <br>
         <img src="https://i.ibb.co/zsR2602/1-applications.png" />
+        <br>
     </li>
     <li>
         Click Add Application:
         <br>
         <img src="https://i.ibb.co/3pMsww0/2-add.png" />
+        <br>
     </li>
     <li>
         Click Web and then Next:
         <br>
         <img src="https://i.ibb.co/nbW5HP3/3-webnext.png" />
+        <br>
     </li>
     <li>
         Give your application a Name and set Login redirect URI to http://localhost:8080/login/oauth2/code/okta then click Done:
         <br>
         <img src="https://i.ibb.co/p4Qjt2K/4-name.png" />
+        <br>
     </li>
     <li>
         Click Edit:
         <br>
         <img src="https://i.ibb.co/X7j77nS/5-edit.png" />
+        <br>
     </li>
     <li>
         In General Settings under Login, set Logout redirect URIs to http://localhost:3000 and http://localhost:8080 :
         <br>
         <img src="https://i.ibb.co/9TD09f3/6-logout.png" />
+        <br>
     </li>
 </ul>
 
@@ -52,8 +58,8 @@
     <li>
         Copy the following into your <b>application.yml</b> file:
         <br>
-        ```java
-        spring:
+        
+            <p>spring:
           security:
             oauth2:
               client:
@@ -65,7 +71,7 @@
                 provider:
                   okta:
                     issuer-uri:
-        ```
+        </p>
     </li>
 
 </ul>
