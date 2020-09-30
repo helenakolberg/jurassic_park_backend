@@ -8,12 +8,57 @@
 
 <p>In order to run this application, you need to create a free <a href="https://developer.okta.com/">Okta Developer</a> account.</p>
 
-<p>Once you have successfully created an account, follow these steps:</p>
+<h4>Once you have successfully created an account, follow these steps:</h4>
 
 <ul>
     <li>
-        Click on Applications:
+        Login to Okta and click Applications:
         <img src="https://i.ibb.co/zsR2602/1-applications.png" />
+    </li>
+    <li>
+        Click Add Application:
+        <img src="https://i.ibb.co/3pMsww0/2-add.png" />
+    </li>
+    <li>
+        Click Web and then Next:
+        <img src="https://i.ibb.co/nbW5HP3/3-webnext.png" />
+    </li>
+    <li>
+        Give your application a Name and set Login redirect URI to http://localhost:8080/login/oauth2/code/okta then click Done:
+        <img src="https://i.ibb.co/p4Qjt2K/4-name.png" />
+    </li>
+    <li>
+        Click Edit:
+        <img src="https://i.ibb.co/X7j77nS/5-edit.png" />
+    </li>
+    <li>
+        In General Settings under Login, set Logout redirect URIs to http://localhost:3000 and http://localhost:8080 :
+        <img src="https://i.ibb.co/9TD09f3/6-logout.png" />
+    </li>
+</ul>
+
+<h4>Your Okta account is now good to go. Open this directory in IntelliJ IDEA and follow these steps:</h4>
+
+<ul>
+    <li>
+        Create an <b>application.yml</b> file in <b>src/main/resources</b>
+    </li>
+    <li>
+        Copy the following into your <b>application.yml</b> file:
+        ```
+        spring:
+          security:
+            oauth2:
+              client:
+                registration:
+                  okta:
+                    client-id: 
+                    client-secret: 
+                    scope: openid, email, profile
+                provider:
+                  okta:
+                    issuer-uri:
+        ```
     </li>
 
 </ul>
