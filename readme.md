@@ -51,7 +51,8 @@
     </li>
     <li>
         Copy the following into your <b>application.yml</b> file:
-        ```
+        <br>
+        ```java
         spring:
           security:
             oauth2:
