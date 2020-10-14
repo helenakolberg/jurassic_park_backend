@@ -35,8 +35,8 @@ In order to run this application, you need to create a free <a href="https://dev
  
 <kbd><img src="https://i.ibb.co/9TD09f3/6-logout.png" style="border:1px solid grey"/></kbd>
 
+Your Okta account is now ready.
 
-## Your Okta Account Is Now Ready.
 ## Open This Directory With IntelliJ IDEA & Follow These Steps:
 
 
