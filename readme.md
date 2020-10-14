@@ -8,7 +8,7 @@ See the frontend code <a href="https://github.com/helenakolberg/tyrannogotchi_fr
 
 In order to run this application, you need to create a free <a href="https://developer.okta.com/">Okta Developer</a> account.
 
-## Once You Have an Okta Account, Follow These Steps
+## Once You Have an Okta Account, Follow These Steps:
 
 
 * Login to Okta and click Applications:
@@ -36,7 +36,8 @@ In order to run this application, you need to create a free <a href="https://dev
 <kbd><img src="https://i.ibb.co/9TD09f3/6-logout.png" style="border:1px solid grey"/></kbd>
 
 
-## Your Okta Account Is Now Ready. Open This Directory In IntelliJ IDEA & Follow These Steps:
+## Your Okta Account Is Now Ready.
+## Open This Directory With IntelliJ IDEA & Follow These Steps:
 
 
 * Create an *application.yml* file in *src/main/resources*
