@@ -64,4 +64,4 @@ Your Okta account is now ready.
 
 * Install the Lombok plugin in IntelliJ IDEA > Preferences > Plugins
 
-* Run *./mvnw spring-boot:run* in the Terminal to start
+* Run `./mvnw spring-boot:run` in the Terminal to start
