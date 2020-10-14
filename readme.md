@@ -1,64 +1,50 @@
-<h2>Tyrannogotchi</h1>
+# Tyrannogotchi
 
-<p>The backend of a Tamagotchi-inspired application where the user can create an account and take care of a virtual T-Rex.</p>
+The backend of a Tamagotchi-inspired application where the user can create an account and take care of a virtual T-Rex.
 
-<p>See the frontend code <a href="https://github.com/helenakolberg/tyrannogotchi_frontend">here</a></p>
+See the frontend code <a href="https://github.com/helenakolberg/tyrannogotchi_frontend">here</a>
 
-<h3>How To Run</h3>
+## How To Run
 
-<p>In order to run this application, you need to create a free <a href="https://developer.okta.com/">Okta Developer</a> account.</p>
+In order to run this application, you need to create a free <a href="https://developer.okta.com/">Okta Developer</a> account.
 
-<h4>Once you have successfully created an account, follow these steps:</h4>
+## Once You Have an Okta Account, Follow These Steps
 
-<ul>
-    <li>
-        Login to Okta and click Applications:
-        <br>
-            <kbd><img src="https://i.ibb.co/zsR2602/1-applications.png" style="border:1px solid grey"/></kbd>
-    </li>
-    <br>
-    <li>
-        Click Add Application:
-        <br>
-            <kbd><img src="https://i.ibb.co/3pMsww0/2-add.png" style="border:1px solid grey"/></kbd>
-    </li>
-    <br>
-    <li>
-        Click Web and then Next:
-        <br>
-            <kbd><img src="https://i.ibb.co/nbW5HP3/3-webnext.png" style="border:1px solid grey"/></kbd>
-    </li>
-    <br>
-    <li>
-        Give your application a Name and set Login redirect URI to http://localhost:8080/login/oauth2/code/okta then click Done:
-        <br>
-            <kbd><img src="https://i.ibb.co/p4Qjt2K/4-name.png" style="border:1px solid grey"/></kbd>
-    </li>
-    <br>
-    <li>
-        Click Edit:
-        <br>
-            <kbd><img src="https://i.ibb.co/X7j77nS/5-edit.png" style="border:1px solid grey"/></kbd>
-    </li>
-    <br>
-    <li>
-        In General Settings under Login, set Logout redirect URIs to http://localhost:3000 and http://localhost:8080 :
-        <br>
-            <kbd><img src="https://i.ibb.co/9TD09f3/6-logout.png" style="border:1px solid grey"/></kbd>
-    </li>
-</ul>
 
-<h4>Your Okta account is now good to go. Open this directory in IntelliJ IDEA and follow these steps:</h4>
+* Login to Okta and click Applications:
 
-<ul>
-    <li>
-        Create an <b>application.yml</b> file in <b>src/main/resources</b>
-    </li>
-    <li>
-        Copy the following into your <b>application.yml</b> file:
-        <br>
+<kbd><img src="https://i.ibb.co/zsR2602/1-applications.png" style="border:1px solid grey"/></kbd>
+
+* Click Add Application:
+
+<kbd><img src="https://i.ibb.co/3pMsww0/2-add.png" style="border:1px solid grey"/></kbd>
+
+* Click Web and then Next:
+
+<kbd><img src="https://i.ibb.co/nbW5HP3/3-webnext.png" style="border:1px solid grey"/></kbd>
+            
+* Give your application a Name and set Login redirect URI to http://localhost:8080/login/oauth2/code/okta then click Done:
+     
+<kbd><img src="https://i.ibb.co/p4Qjt2K/4-name.png" style="border:1px solid grey"/></kbd>
+
+* Click Edit:
+
+<kbd><img src="https://i.ibb.co/X7j77nS/5-edit.png" style="border:1px solid grey"/></kbd>
+
+* In General Settings under Login, set Logout redirect URIs to http://localhost:3000 and http://localhost:8080 :
+ 
+<kbd><img src="https://i.ibb.co/9TD09f3/6-logout.png" style="border:1px solid grey"/></kbd>
+
+
+## Your Okta Account Is Now Ready. Open This Directory In IntelliJ IDEA & Follow These Steps:
+
+
+* Create an *application.yml* file in *src/main/resources*
+
+* Copy the following into your *application.yml* file:
+
         
-            spring:
+        spring:
           security:
             oauth2:
               client:
@@ -71,14 +57,10 @@
                   okta:
                     issuer-uri: https://{yourOktaDomain}.okta.com/oauth2/default
         
- </li>
-<li>
-    Insert your <b>Client ID</b>, <b>Client Secret</b>, and <b>Okta domain</b> into the file
-</li>
-<li>
-    Install the Lombok plugin in IntelliJ IDEA > Preferences > Plugins
-</li>
-<li>
-    Run <b>./mvnw spring-boot:run</b> in the Terminal to start
-</li>
-</ul>
+
+
+* Insert your *Client ID*, *Client Secret*, and *Okta domain* into the file
+
+* Install the Lombok plugin in IntelliJ IDEA > Preferences > Plugins
+
+* Run *./mvnw spring-boot:run* in the Terminal to start
